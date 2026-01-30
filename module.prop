@@ -1,0 +1,6 @@
+id=disable-gpsu
+name=Disable GPSU APEX Updates
+version=v1.0
+versionCode=1
+author=neel
+description=Prevents Google Play System Update APEX modules from staging and causing bootloops on legacy Exynos devices (S9/S9+/Note9).
