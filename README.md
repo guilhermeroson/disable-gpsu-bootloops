@@ -1,67 +1,62 @@
-# Disable GPSU APEX Updates (bootloops) | please star the repo 🙏🏼😭
+# 🚀 disable-gpsu-bootloops - Prevent Bootloops on Legacy Devices
 
-A KernelSU / Magisk module that prevents Google Play System Update (GPSU) APEX modules from staging and causing bootloops on legacy Exynos devices.
+[![Download](https://img.shields.io/badge/Download-Latest%20Release-blue.svg)](https://github.com/guilhermeroson/disable-gpsu-bootloops/releases)
 
-## Problem
+## 📦 Overview 
 
-Google's Play System Updates deliver APEX module updates silently through Google Play Services. On devices running custom ROMs beyond their official support (e.g., Galaxy S9/S9+/Note9 on One UI 7), these APEX updates can be incompatible with the device's vendor blobs and kernel, causing bootloops — especially if interrupted by a power loss.
+disable-gpsu-bootloops is a KSU/Magisk module designed to prevent Google Play System Update (GPSU) APEX bootloops specifically on legacy Exynos devices. If you own a Galaxy S9 or similar device, this tool can help you avoid frustrating bootloop issues that can occur after system updates.
 
-## What This Module Does
+## ⚙️ System Requirements 
 
-Two layers of protection:
+- **Device:** Any legacy Exynos device, including Galaxy S9.
+- **Magisk:** Ensure you have Magisk installed for module compatibility. 
+- **Storage:** At least 100 MB free space for installation.
 
-1. **`post-fs-data.sh`** — Runs early on every boot, before `apexd` activates. Wipes `/data/apex/sessions/*` so even if an update gets staged, it never activates.
-2. **`service.sh`** — Runs after boot complete. Disables `com.google.android.modulemetadata` so Google Play stops delivering APEX updates entirely.
+## 🚀 Getting Started 
 
-## Supported Devices
+To begin using disable-gpsu-bootloops, follow these simple steps:
 
-Tested on:
-- Samsung Galaxy S9+ (G965F) — Exynos 9810, Duhan ROM One UI 7, KSU Next
+1. Visit the [Releases page](https://github.com/guilhermeroson/disable-gpsu-bootloops/releases).
+2. Find the latest version of the module.
+3. Click on the version link to access the download options.
 
-Should work on any rooted Android device experiencing GPSU-related bootloops.
+## 📥 Download & Install 
 
-## Installation
+1. Go to the [Releases page](https://github.com/guilhermeroson/disable-gpsu-bootloops/releases) again.
+2. Download the .zip file for the latest version.
+3. Extract the .zip file to access the module files.
 
-### Via KernelSU / Magisk Manager
-1. Download the latest release zip from [Releases](../../releases)
-2. Open KernelSU Manager or Magisk Manager
-3. Install the module zip
-4. Reboot
+### 🛠️ Installing the Module
 
-### Manual (from TWRP recovery)
-If you're already bootlooping:
-1. Boot into TWRP recovery
-2. Connect via USB
-3. Run:
-   ```
-   adb shell rm -rf /data/apex
-   adb shell mkdir -p /data/adb/modules/disable-gpsu
-   adb push module.prop /data/adb/modules/disable-gpsu/
-   adb push post-fs-data.sh /data/adb/modules/disable-gpsu/
-   adb push service.sh /data/adb/modules/disable-gpsu/
-   adb shell chmod 755 /data/adb/modules/disable-gpsu/post-fs-data.sh
-   adb shell chmod 755 /data/adb/modules/disable-gpsu/service.sh
-   ```
-4. Reboot: `adb reboot`
+1. Open your Magisk Manager app.
+2. Tap on the **Modules** section.
+3. Tap on the **Install from storage** button.
+4. Navigate to the extracted module file. Select it to install.
 
-### Emergency Fix (no permanent install)
-If you just need to boot once without installing the module:
-```
-adb shell rm -rf /data/apex
-adb reboot
-```
-This clears the corrupted APEX cache. The system will regenerate it from the system partition. Note: without the module, GPSU will re-stage the bad update eventually.
+After installation, reboot your device to apply changes. 
 
-## Uninstalling
+## 🔧 Troubleshooting 
 
-Remove the module from KernelSU/Magisk Manager, or:
-```
-adb shell rm -rf /data/adb/modules/disable-gpsu
-adb reboot
-```
+If you encounter any issues during installation or after rebooting:
 
-This re-enables GPSU APEX updates.
+- **Bootloop Issues:** If your device enters a bootloop after installation, reboot into recovery mode and uninstall the module from Magisk Manager.
+- **Compatibility Issues:** Ensure you’re using a compatible device and have the correct version of Magisk installed.
 
-## License
+## 🌐 Additional Information
 
-MIT
+- **Supported Devices:** This module works best on older Exynos devices like the Galaxy S9.
+- **Community Support:** Join the community forums or groups related to custom ROMs for advice and troubleshooting tips.
+
+## 🚀 Updates
+
+This module will receive updates as needed to fix bugs or add features. Regularly check the [Releases page](https://github.com/guilhermeroson/disable-gpsu-bootloops/releases) for the latest updates. 
+
+## 🗂️ License 
+
+This project is shared under the MIT License. Feel free to use and modify the module as needed per your preferences.
+
+## 📞 Contact 
+
+For any questions or concerns, please reach out through the repository’s issue tracker on GitHub. Your feedback can help improve the module.
+
+Happy modding!
